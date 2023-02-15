@@ -17,3 +17,9 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.cursorline = true
 
 vim.opt.spell = true
+
+vim.opt.guifont = { "FiraCode_Nerd_Font", ":h10" }
+
+if vim.g.neovide then
+    require("neovide")
+end
