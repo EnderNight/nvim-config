@@ -20,7 +20,9 @@ vim.opt.cursorline = true -- highlight the line your cursor is in
 vim.opt.spell = true -- enable spell checking
 --------
 
--- Treesitter folding --
-vim.opt.foldmethod = expr
+
+--- Treesitter ---
+vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = vim.fn['nvim_treesitter#foldexpr']()
-vim.opt.nofoldenable = true
+vim.opt.foldenable = false
+---

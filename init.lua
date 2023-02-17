@@ -1,6 +1,4 @@
--- initial config file, meant to be changed afterwards
-
-require("default")
+-- initial config file
 
 if vim.g.neovide then
     require("neovide")
@@ -24,3 +22,6 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Starting
 require("lazy").setup("plugins")
+
+-- options --
+require("options")
