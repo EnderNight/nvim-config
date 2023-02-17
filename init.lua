@@ -1,12 +1,8 @@
 -- initial config file
 
-if vim.g.neovide then
-    require("neovide")
-end
 
----- Lazy ----
-
--- Installation
+----- Lazy -----
+--- Installation
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then 
     vim.fn.system({
@@ -20,8 +16,17 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Starting
+--- Starting
 require("lazy").setup("plugins")
+----------
 
--- options --
+
+
+
+--- Options ---
 require("options")
+
+--- Neovide ---
+if vim.g.neovide then
+    require("neovide")
+end

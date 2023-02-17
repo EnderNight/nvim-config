@@ -21,6 +21,9 @@ return {
             },
         },
 
+        indent = {
+            enable = true
+        },
 
     },
     
