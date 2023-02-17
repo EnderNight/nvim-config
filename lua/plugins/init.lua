@@ -1,3 +1,4 @@
 return {
-    "navarasu/onedark.nvim",
+    "sainnhe/gruvbox-material",
+    "nvim-treesitter/nvim-treesitter",
 }
