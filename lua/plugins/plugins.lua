@@ -63,7 +63,7 @@ return {
                     enable = true,
                 },
 
-            },
+            }
         end,
     },
 
@@ -76,7 +76,7 @@ return {
             default = true,
             strict = true,
         },
-    }
+    },
     
 
     {
@@ -89,6 +89,6 @@ return {
     {
         "ethanholz/nvim-lastplace",
         config = true ,
-    }
+    },
 
 }
