@@ -7,6 +7,7 @@ Personal nvim config files.
 ### Core Plugins
 
 - Plugin Manager: [Packer](https://github.com/wbthomason/packer.nvim)
+- Syntax Highlighting: [Neovim Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 ### UI Plugins
 
