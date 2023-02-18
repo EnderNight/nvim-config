@@ -5,8 +5,8 @@ Personal nvim config files.
 ## Installation
 
 Follow packer's [installation steps](https://github.com/wbthomason/packer.nvim) and clone this repo in the `.config/nvim` folder.  
-Then do `mv nvim-config/* . && rmdir nvim-config`  
-Finally, do `nvim` then `:PackerInstall`
+Then change your current directory to `~/.config/nvim` and do `mv nvim-config/* . && rmdir nvim-config`.  
+Finally, do `nvim` then `:PackerInstall`.
 
 ## Plugins
 
