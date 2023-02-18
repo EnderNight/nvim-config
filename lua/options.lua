@@ -18,4 +18,6 @@ vim.opt.clipboard = "unnamedplus" -- use the system clipboard
 vim.opt.cursorline = true -- highlight the line your cursor is in
 
 vim.opt.spell = true -- enable spell checking
+
+vim.opt.signcolumn = 'auto'
 --------

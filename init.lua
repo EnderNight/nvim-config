@@ -1,6 +1,5 @@
 -- initial config file
 
-
 --- Options ---
 require("options")
 
