@@ -4,7 +4,8 @@
 --- Options ---
 require("options")
 
---- Neovide ---
-if vim.g.neovide then
-    require("neovide")
-end
+-- Plugins --
+require('plugins')
+
+-- Autocommands --
+require('autocommands')
