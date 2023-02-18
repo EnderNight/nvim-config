@@ -2,6 +2,10 @@
 
 Personal nvim config files.
 
+## Installation
+
+Follow packer's [installation steps](https://github.com/wbthomason/packer.nvim) and clone this repo in the `.config/nvim` folder.
+
 ## Plugins
 
 ### Core Plugins

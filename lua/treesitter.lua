@@ -1,6 +1,6 @@
 require('nvim-treesitter.configs').setup {
 
-    ensure_installed = { "c", "lua", "vim" },
+    ensure_installed = { 'lua', 'vim', 'c', 'markdown' },
 
     sync_install = false,
 
