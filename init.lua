@@ -9,7 +9,7 @@ if not vim.loop.fs_stat(lazypath) then
 		"clone",
 		"--filter=blob:none",
 		"https://github.com/folke/lazy.nvim.git",
-		"--branch=stable", -- latest stable release
+		"--branch=stable",
 		lazypath,
 	})
 end
@@ -128,6 +128,16 @@ require("lazy").setup({
 		dependencies = {
 			'tpope/vim-rhubarb'
 		},
+	},
+
+	{
+		'mbbill/undotree'
+	},
+
+	{
+		"folke/trouble.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = true,
 	},
 
 

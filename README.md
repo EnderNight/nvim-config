@@ -23,3 +23,4 @@ git clone https://github.com/EnderNight/nvim-config ~/.config/nvim
 - Autocompletion/Package manager/LSP config: [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
 - File manager: [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 - Git(Hub) integration: [vim-fugitive](https://github.com/tpope/vim-fugitive), [vim-rhubarb](https://github.com/tpope/vim-rhubarb)
+- Diagnostics summary: [trouble](https://github.com/folke/trouble.nvim)
