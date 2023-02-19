@@ -20,3 +20,4 @@ git clone https://github.com/EnderNight/nvim-config ~/.config/nvim
 - Telescope fzf native: [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
 - Colorscheme: [gruvbox-material](https://github.com/sainnhe/gruvbox-material)
 - Syntax highlighting: [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- Autocompletion/Package manager/LSP config: [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
