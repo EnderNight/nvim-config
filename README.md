@@ -13,7 +13,21 @@ Finally, do `nvim` then `:PackerInstall`.
 ### Core Plugins
 
 - Plugin Manager: [Packer](https://github.com/wbthomason/packer.nvim)
+- Package Manager (LSP, DAP, Linters, Formatters): [Mason](williamboman/mason.nvim)
 - Syntax Highlighting: [Neovim Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+
+### LSP Servers
+
+- Configs: [Nvim Lspconfig](neovim/nvim-lspconfig), [Mason Lspconfig](williamboman/mason-lspconfig.nvim)
+
+#### List of preconfigured Lsp:
+
+- jdtls (Java)
+- pyright (Python)
+- lua_ls (Lua)
+- vimls (Vim)
+- sqlls (SQL)
+- marksman (Markdown)
 
 ### UI Plugins
 
