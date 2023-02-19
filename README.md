@@ -24,3 +24,4 @@ git clone https://github.com/EnderNight/nvim-config ~/.config/nvim
 - File manager: [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 - Git(Hub) integration: [vim-fugitive](https://github.com/tpope/vim-fugitive), [vim-rhubarb](https://github.com/tpope/vim-rhubarb)
 - Diagnostics summary: [trouble](https://github.com/folke/trouble.nvim)
+- Buffer line: [bufferline](https://github.com/akinsho/bufferline.nvim)
