@@ -17,4 +17,4 @@ Finally, do `nvim` then `:PackerInstall`.
 
 ### UI Plugins
 
-- Colorscheme: [Gruvbox-material](https://github.com/sainnhe/gruvbox-material)
+- Colorscheme: [Gruvbox-material](https://github.com/sainnhe/gruvbox-material), [OneDark](https://github.com/navarasu/onedark.nvim)
