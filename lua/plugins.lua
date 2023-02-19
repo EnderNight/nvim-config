@@ -1,12 +1,19 @@
 
 return require('packer').startup(function(use)
     
-    use 'wbthomason/packer.nvim'
+    use { 
+        'wbthomason/packer.nvim',
 
-    use { 'sainnhe/gruvbox-material', config = function() require('colorscheme') end }
-    use { 'navarasu/onedark.nvim', config = function() require('colorscheme') end }
+     { 'sainnhe/gruvbox-material', config = function() require('colorscheme') end },
+     { 'navarasu/onedark.nvim', config = function() require('colorscheme') end },
 
-    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate', config = function() require('treesitter') end }
+     { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate', config = function() require('treesitter') end },
+
+     { 'williamboman/mason.nvim', config = function() require('mason-config') end },
+     { 'williamboman/mason-lspconfig.nvim', config = function() require('mason-lsp-configs') end },
+     { 'neovim/nvim-lspconfig' },
+     { 'hrsh7th/nvim-cmp' },
+}
 
 
 end)

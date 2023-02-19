@@ -23,7 +23,7 @@ end
 
 -- OneDark
 require('onedark').setup {
-    style = 'warmer',
+    style = 'deep',
     term_colors = true,
     
     code_style = {
