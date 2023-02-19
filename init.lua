@@ -152,6 +152,14 @@ require("lazy").setup({
 		config = true,
 	},
 
+	{
+		'mfussenegger/nvim-dap',
+	},
+
+	{
+		'mfussenegger/nvim-jdtls',
+	},
+
 
 }, {})
 
