@@ -25,3 +25,4 @@ git clone https://github.com/EnderNight/nvim-config ~/.config/nvim
 - Git(Hub) integration: [vim-fugitive](https://github.com/tpope/vim-fugitive), [vim-rhubarb](https://github.com/tpope/vim-rhubarb)
 - Diagnostics summary: [trouble](https://github.com/folke/trouble.nvim)
 - Buffer line: [bufferline](https://github.com/akinsho/bufferline.nvim)
+- Lua line: [lualine](https://github.com/nvim-lualine/lualine.nvim)
