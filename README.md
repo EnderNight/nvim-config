@@ -14,6 +14,7 @@ Finally, do `nvim` then `:PackerInstall`.
 
 - Plugin Manager: [Packer](https://github.com/wbthomason/packer.nvim)
 - Package Manager (LSP, DAP, Linters, Formatters): [Mason](williamboman/mason.nvim)
+- Completion engine: [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - Syntax Highlighting: [Neovim Treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 
 ### LSP Servers
@@ -28,6 +29,10 @@ Finally, do `nvim` then `:PackerInstall`.
 - vimls (Vim)
 - sqlls (SQL)
 - marksman (Markdown)
+
+### Completion engines
+
+- cmp-nvim-lsp
 
 ### UI Plugins
 
