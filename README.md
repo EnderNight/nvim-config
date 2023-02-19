@@ -10,4 +10,4 @@ git clone https://github.com/EnderNight/nvim-config ~/.config/nvim
 
 ## Plugins
 
-No plugins yet.
+- Plugin Manager: [lazy.nvim](https://github.com/folke/lazy.nvim)
