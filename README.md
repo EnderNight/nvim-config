@@ -22,3 +22,4 @@ git clone https://github.com/EnderNight/nvim-config ~/.config/nvim
 - Syntax highlighting: [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - Autocompletion/Package manager/LSP config: [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim)
 - File manager: [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+- Git(Hub) integration: [vim-fugitive](https://github.com/tpope/vim-fugitive), [rhubarb](https://github.com/tpope/vim-rhubarb)

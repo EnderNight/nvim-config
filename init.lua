@@ -123,6 +123,13 @@ require("lazy").setup({
 		config = true,
 	},
 
+	{
+		'tpope/vim-fugitive',
+		dependencies = {
+			'tpope/vim-rhubarb'
+		},
+	},
+
 
 }, {})
 
