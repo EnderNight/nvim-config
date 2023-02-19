@@ -19,3 +19,4 @@ git clone https://github.com/EnderNight/nvim-config ~/.config/nvim
 - Fuzzy finder: [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - Telescope fzf native: [telescope-fzf-native](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
 - Colorscheme: [gruvbox-material](https://github.com/sainnhe/gruvbox-material)
+- Syntax highlighting: [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)

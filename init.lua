@@ -20,7 +20,7 @@ require("lazy").setup({
 		lazy = false,
 		priority = 1000,
 		config = function()
-			
+
 			if vim.fn.has('termguicolors') then
 				vim.opt.termguicolors = true
 			end
@@ -54,6 +54,39 @@ require("lazy").setup({
 		},
 		init = function()
 			require('telescope').load_extension('fzf')
+		end,
+	},
+
+	{
+		'nvim-treesitter/nvim-treesitter',
+		build = ":TSUpdate",
+		config = function()
+			require'nvim-treesitter.configs'.setup {
+				ensure_installed = "all",
+
+				auto_install = true,
+				highlight = {
+					enable = true,
+					additional_vim_regex_highlighting = false,
+				},
+				incremental_selection = {
+					enable = true,
+					keymaps = {
+						init_selection = "gnn", -- set to `false` to disable one of the mappings
+						node_incremental = "grn",
+						scope_incremental = "grc",
+						node_decremental = "grm",
+					},
+				},
+				indent = {
+					enable = true
+				}
+			}
+			vim.cmd([[
+				set foldmethod=expr
+				set foldexpr=nvim_treesitter#foldexpr()
+				set nofoldenable
+				]])
 		end,
 	},
 
