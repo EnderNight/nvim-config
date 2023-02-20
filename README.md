@@ -9,9 +9,17 @@ Personal nvim config files.
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [fd](https://github.com/sharkdp/fd)
 
+For Arch systems:
+```sh
+sudo pacman -S ripgrep fd
+```
+
+Then:
 ```sh
 git clone https://github.com/EnderNight/nvim-config ~/.config/nvim
 ```
+
+And everything is ready!
 
 ## Plugins
 
