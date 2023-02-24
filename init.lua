@@ -148,6 +148,7 @@ require("lazy").setup({
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons',},
+        config = true,
     },
 
     {
@@ -255,21 +256,4 @@ vim.api.nvim_create_autocmd("BufEnter", {
     end
 })
 
-
-require("flutter-tools").setup{
-    decorations = {
-        statusline = {
-            app_version = true,
-            device = true
-        },
-    },
-} -- use defaults
-
-
-
-require("lualine").setup {
-    sections = {
-        lualine_x = { 'encoding', 'fileformat', 'filetype', },
-    },
-}
 
