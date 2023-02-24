@@ -84,10 +84,10 @@ require("lazy").setup({
                 }
             }
             vim.cmd([[
-                set foldmethod=expr
-                set foldexpr=nvim_treesitter#foldexpr()
-                set nofoldenable
-                ]])
+        set foldmethod=expr
+        set foldexpr=nvim_treesitter#foldexpr()
+        set nofoldenable
+        ]])
         end,
     },
 
@@ -169,10 +169,25 @@ require("lazy").setup({
         dependencies = { 'nvim-lua/plenary.nvim' },
     },
 
-    {
+{
         'norcalli/nvim-colorizer.lua',
     },
 
+    {
+        'folke/twilight.nvim',
+    },
+
+    {
+        "danymat/neogen",
+dependencies = "nvim-treesitter/nvim-treesitter",
+        config = true,
+        version = "*",
+    },
+
+    {
+        'ahmedkhalf/project.nvim',
+
+    },
 
 
 }, {})
@@ -287,6 +302,11 @@ require("Comment").setup()
 
 require("nvim-autopairs").setup()
 
+require("colorizer").setup()
+
 require("todo-comments").setup()
 
-require("colorizer").setup()
+require("twilight").setup()
+
+require("project_nvim").setup()
+require("telescope").load_extension('projects')
