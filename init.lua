@@ -84,10 +84,10 @@ require("lazy").setup({
                 }
             }
             vim.cmd([[
-                                set foldmethod=expr
-                                set foldexpr=nvim_treesitter#foldexpr()
-                                set nofoldenable
-                                ]])
+                set foldmethod=expr
+                set foldexpr=nvim_treesitter#foldexpr()
+                set nofoldenable
+                ]])
         end,
     },
 
@@ -119,7 +119,6 @@ require("lazy").setup({
         dependencies = {
             'nvim-tree/nvim-web-devicons',
         },
-        config = true,
     },
 
     {
@@ -136,27 +135,16 @@ require("lazy").setup({
     {
         "folke/trouble.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
-        config = true,
     },
 
     {
         'akinsho/bufferline.nvim',
         dependencies = 'nvim-tree/nvim-web-devicons',
-        config = true,
     },
 
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons',},
-        config = true,
-    },
-
-    {
-        'mfussenegger/nvim-dap',
-    },
-
-    {
-        'mfussenegger/nvim-jdtls',
     },
 
     {
@@ -166,7 +154,25 @@ require("lazy").setup({
 
     {
         'rcarriga/nvim-notify',
-    }
+    },
+
+    {
+        'numToStr/Comment.nvim',
+    },
+
+    {
+        'windwp/nvim-autopairs',
+    },
+
+    {
+        'folke/todo-comments.nvim',
+        dependencies = { 'nvim-lua/plenary.nvim' },
+    },
+
+    {
+        'norcalli/nvim-colorizer.lua',
+    },
+
 
 
 }, {})
@@ -234,7 +240,7 @@ vim.o.mouse = 'a'
 vim.o.clipboard = 'unnamedplus'
 
 vim.o.breakindent = true
-vim.opt.tabstop = 8 -- set tabs to be 8 cells wide (prevent confusion between tabs and indentation)
+vim.opt.tabstop = 4 -- set tabs to be 8 cells wide (prevent confusion between tabs and indentation)
 vim.opt.shiftwidth = 4 -- set indentation to be 4 cells wide
 vim.opt.smarttab = true -- set the tab key to be used only for indentation (not inserting tab chars)
 vim.opt.expandtab = true -- set typed tabs to be always replaced by spaces
@@ -267,3 +273,20 @@ vim.api.nvim_create_autocmd("BufEnter", {
 
 -- Notifications --
 vim.notify = require("notify")
+
+
+require("nvim-tree").setup()
+
+require("trouble").setup()
+
+require("bufferline").setup()
+
+require("lualine").setup()
+
+require("Comment").setup()
+
+require("nvim-autopairs").setup()
+
+require("todo-comments").setup()
+
+require("colorizer").setup()
