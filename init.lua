@@ -164,6 +164,10 @@ require("lazy").setup({
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
 
+    {
+        'rcarriga/nvim-notify',
+    }
+
 
 }, {})
 
@@ -245,6 +249,9 @@ vim.o.updatetime = 250
 vim.o.timeout = true
 vim.o.timeoutlen = 300
 
+vim.o.splitbelow = true
+vim.o.splitright = true
+
 
 -- Autocommands --
 vim.api.nvim_create_autocmd("BufEnter", {
@@ -257,3 +264,6 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 
+
+-- Notifications --
+vim.notify = require("notify")
