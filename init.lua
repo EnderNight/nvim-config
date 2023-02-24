@@ -179,7 +179,7 @@ require("lazy").setup({
 
     {
         "danymat/neogen",
-dependencies = "nvim-treesitter/nvim-treesitter",
+        dependencies = "nvim-treesitter/nvim-treesitter",
         config = true,
         version = "*",
     },
@@ -188,6 +188,8 @@ dependencies = "nvim-treesitter/nvim-treesitter",
         'ahmedkhalf/project.nvim',
 
     },
+
+    { "lukas-reineke/indent-blankline.nvim" },
 
 
 }, {})
@@ -310,3 +312,15 @@ require("twilight").setup()
 
 require("project_nvim").setup()
 require("telescope").load_extension('projects')
+
+
+-- indent blankline options and setup --
+vim.opt.list = true
+vim.opt.listchars:append "space:⋅"
+vim.opt.listchars:append "eol:↴"
+
+require("indent_blankline").setup {
+    space_char_blankline = " ",
+    show_current_context = true,
+    show_current_context_start = true,
+}
