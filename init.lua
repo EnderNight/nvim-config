@@ -205,7 +205,11 @@ require("lazy").setup({
 
     {
         'Shatur/neovim-session-manager',
-    }
+    },
+
+    {
+        'akinsho/toggleterm.nvim',
+    },
 
 
 }, {})
@@ -342,3 +346,5 @@ require("indent_blankline").setup {
 }
 
 require("which-key").setup()
+
+require("toggleterm").setup()
