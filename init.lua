@@ -169,7 +169,7 @@ require("lazy").setup({
         dependencies = { 'nvim-lua/plenary.nvim' },
     },
 
-{
+    {
         'norcalli/nvim-colorizer.lua',
     },
 
@@ -193,6 +193,18 @@ require("lazy").setup({
 
     {
         'folke/which-key.nvim',
+    },
+
+    {
+        'goolord/alpha-nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        config = function ()
+            require'alpha'.setup(require'alpha.themes.dashboard'.config)
+        end
+    },
+
+    {
+        'Shatur/neovim-session-manager',
     }
 
 
