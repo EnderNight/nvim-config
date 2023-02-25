@@ -1,6 +1,8 @@
+vim.opt.shiftwidth = 2 -- set indentation to be 2 cells wide
+
 require("flutter-tools").setup {
     outline = {
-        open_cmd = "60vnew", -- command to use to open the outline buffer
+        open_cmd = "50vnew", -- command to use to open the outline buffer
         auto_open = true -- if true this will open the outline automatically when it is first populated
     },
     widget_guides = {
@@ -26,8 +28,6 @@ require("flutter-tools").setup {
 
 require("telescope").load_extension("flutter")
 
-vim.opt.shiftwidth = 2 -- set indentation to be 2 cells wide
-
 -- Auto close outline view when last window --
 vim.api.nvim_create_autocmd("BufEnter", {
     nested = true,
@@ -40,4 +40,8 @@ vim.api.nvim_create_autocmd("BufEnter", {
 
 
 -- Mappings --
-vim.keymap.set({'n', 'i', 'v',}, '<leader>ff', '<cmd>Telescope flutter commands<cr>')
+vim.keymap.set({'n', 'i', 'v',}, '<leader>fc', '<cmd>Telescope flutter commands<cr>')
+
+-- Open useful windows --
+vim.cmd "Trouble"
+vim.cmd "NvimTreeToggle"
