@@ -92,6 +92,7 @@ require('lazy').setup({
       'hrsh7th/cmp-path',
       'hrsh7th/cmp-cmdline',
       'hrsh7th/cmp-emoji',
+      'chrisgrieser/cmp-nerdfont',
 
       {
         'petertriho/cmp-git',
@@ -583,6 +584,7 @@ cmp.setup {
     { name = 'buffer' },
     { name = 'path' },
     { name = 'emoji' },
+    { name = 'nerdfont' },
   },
 
 
