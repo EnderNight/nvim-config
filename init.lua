@@ -298,8 +298,8 @@ vim.o.showmatch = true
 vim.o.updatetime = 250
 vim.o.timeout = true
 vim.o.timeoutlen = 100
--- vim.o.ttimeout = true
--- vim.o.ttimeoutlen = 100
+vim.o.ttimeout = true
+vim.o.ttimeoutlen = 100
 
 --- Always split right or below
 vim.o.splitright = true
