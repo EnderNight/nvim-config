@@ -36,4 +36,4 @@ vim.o.splitbelow = true -- Always split to below
 
 --- Update time
 vim.o.updatetime = 250 -- Time before swap
-vim.o.timeoutlen = 300 -- Time before mapping
+vim.o.timeoutlen = 2000 -- Time before mapping
