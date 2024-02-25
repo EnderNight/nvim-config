@@ -7,10 +7,20 @@
 ]]--
 
 
---- Vim Options
-require 'options'
+--[[ Leader ]]
+-- :help leader
+-- Set space as <leader>
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
+
+--- Lazy
+require 'config.lazy'
+
+
+--- Vim Options
+require 'config.options'
 
 
 --- Keymaps
-require 'keymaps'
+require 'config.keymaps'
