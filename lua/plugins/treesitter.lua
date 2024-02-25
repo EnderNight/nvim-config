@@ -19,7 +19,7 @@ return {
                     init_selection = 'gnn',
                     node_incremental = 'grn',
                     scope_incremental = 'grc',
-                    node_incremental = 'grm',
+                    node_decremental = 'grm',
                 },
             },
 

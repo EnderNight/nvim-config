@@ -1,15 +1,23 @@
 --[[ Telescope keymaps ]]
 
 local Utils = require('utils')
-local map = Utils.keymaps.map
 local builtin = require('telescope.builtin')
+local wk = require('which-key')
 
--- Find files
-map('n', '<leader>tff', builtin.find_files, { desc = '[f]ind [f]iles' })
-map('n', '<leader>tfg', builtin.git_files, { desc = '[f]ind [g]it files' })
+wk.register({
+    t = {
+        name = 'Telescope',
 
--- Find in files
-map('n', '<leader>tlg', builtin.live_grep, { desc = '[l]ive [g]rep' })
+        f = {
+            name = 'Find files',
+            f = { builtin.find_files, 'Find files', },
+            g = { builtin.git_files, 'Find git files', },
+        },
 
--- List buffers
-map('n', '<leader>tlb', builtin.buffers, { desc = '[l]ist [b]uffers' })
+        lg = { builtin.live_grep, 'Live grep', },
+
+        lb = { builtin.buffers, 'List buffers', },
+
+        ts = { builtin.treesitter, 'Show Treesitter', },
+    },
+}, { prefix = '<leader>', })

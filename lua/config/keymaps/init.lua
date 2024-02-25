@@ -9,3 +9,6 @@ require 'config.keymaps.default'
 
 --- Telescope
 require 'config.keymaps.telescope'
+
+--- Hop
+require 'config.keymaps.hop'
