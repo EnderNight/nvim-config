@@ -8,4 +8,9 @@
 
 
 --- Vim Options
-require("options")
+require 'options'
+
+
+
+--- Keymaps
+require 'keymaps'
