@@ -1,6 +1,10 @@
 return {
     'nvim-treesitter/nvim-treesitter',
 
+    dependencies = {
+        'nvim-treesitter/nvim-treesitter-textobjects',
+    },
+
     build = ':TSUpdate',
 
     config = function()
@@ -24,6 +28,15 @@ return {
             },
 
             indent = { enable = true, },
+
+            -- TODO: add more keymaps
+            textobjects = {
+                swap = {
+                    enable = true,
+                    swap_next = { ['<leader>a'] = '@parameter.inner', },
+                    swap_previous = { ['<leader>A'] = '@parameter.inner', },
+                },
+            },
         })
 
     end,
