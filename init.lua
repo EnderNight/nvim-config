@@ -18,6 +18,14 @@ vim.g.maplocalleader = ' '
 require 'config.lazy'
 
 
+--- LSP
+require 'config.lsp'
+
+
+-- cmp
+require 'config.cmp'
+
+
 --- Vim Options
 require 'config.options'
 

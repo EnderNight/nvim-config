@@ -37,3 +37,6 @@ vim.o.splitbelow = true -- Always split to below
 --- Update time
 vim.o.updatetime = 250 -- Time before swap
 vim.o.timeoutlen = 300 -- Time before mapping
+
+--- Scrolloff
+vim.o.scrolloff = 10
