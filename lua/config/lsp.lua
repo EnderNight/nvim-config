@@ -1,9 +1,6 @@
 local lsp_zero = require('lsp-zero')
 local navic = require('nvim-navic')
 
-require('lspconfig').clangd.setup({})
-require('lspconfig').lua_ls.setup({})
-
 lsp_zero.on_attach(function(client, bufnr)
 	lsp_zero.default_keymaps({
         buffer = bufnr,
@@ -14,3 +11,6 @@ lsp_zero.on_attach(function(client, bufnr)
         navic.attach(client, bufnr)
     end
 end)
+
+require('lspconfig').clangd.setup({})
+require('lspconfig').lua_ls.setup({})
