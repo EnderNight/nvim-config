@@ -40,3 +40,6 @@ vim.o.timeoutlen = 300 -- Time before mapping
 
 --- Scrolloff
 vim.o.scrolloff = 10
+
+--- Always listen for changes
+vim.o.autoread = true

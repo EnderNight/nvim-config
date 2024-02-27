@@ -1,19 +1,27 @@
 return {
-    'navarasu/onedark.nvim',
-    priority = 1000,
+    {
+        'navarasu/onedark.nvim',
+        priority = 1000,
 
-    opts = {
-        style = 'deep',
+        opts = {
+            style = 'deep',
 
-        ending_tildes = true,
+            ending_tildes = true,
 
-        code_style = {
-            keywords = 'bold',
-            functions = 'bold',
+            code_style = {
+                keywords = 'bold',
+                functions = 'bold',
+            },
         },
+
+        config = function()
+            require('onedark').load()
+        end
     },
 
-    config = function()
-        require('onedark').load()
-    end
+    {
+        "brenoprata10/nvim-highlight-colors",
+
+        config = true,
+    },
 }
