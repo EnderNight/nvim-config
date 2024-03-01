@@ -44,13 +44,6 @@ return {
     },
 
     {
-        "ray-x/lsp_signature.nvim",
-        event = "VeryLazy",
-
-        config = true,
-    },
-
-    {
         "smjonas/inc-rename.nvim",
         config = true,
     },
