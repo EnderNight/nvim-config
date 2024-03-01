@@ -6,7 +6,7 @@ Personal neovim config.
 
 - [lazy](https://github.com/folke/lazy.nvim): Plugin manager
 
-### Lsp
+### Code
 
 - [lsp-zero](https://github.com/VonHeikemen/lsp-zero.nvim): Lsp setup helper
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig): Quickstart lsp configs
