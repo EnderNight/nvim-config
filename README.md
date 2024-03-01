@@ -1,6 +1,6 @@
 # nvim-config
 
-Personal neovim config.
+The goal of this config (maybe distro) is to keep neovim as a text editor and give you the possibility to config/upgrade it to be an IDE.
 
 ## Plugins
 
@@ -28,7 +28,6 @@ Personal neovim config.
 - [lualine](https://github.com/nvim-lualine/lualine.nvim): Statusline
 - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons): Plenty of icons
 - [noice](https://github.com/folke/noice.nvim): New UI for messages, cmdline and popmenu
-- [which-key](https://github.com/folke/which-key.nvim): Keybinds helper
 
 ### Completion
 
@@ -51,3 +50,30 @@ Personal neovim config.
 - [neodev](https://github.com/folke/neodev.nvim): Setup for plugin/neovim devel
 - [nvim-surround](https://github.com/kylechui/nvim-surround): Add/change/delete surrounding delimiter pairs with ease
 - [telescope](https://github.com/nvim-telescope/telescope.nvim): Find, Filter, Preview and Pick files
+- [which-key](https://github.com/folke/which-key.nvim): Keybinds helper
+
+## File structure
+
+#### lua/
+
+Contains config files
+
+#### lua/plugins/
+
+Contains the Plugin Spec required by lazy.nvim (simply the list of installed plugins)
+
+#### lua/config/
+
+Contains actual vanilla and plugin configurations (cmp, lsp, lazy, ...)
+
+#### lua/config/keymaps
+
+Contains explicitly defined keymaps (/!\ some keymaps are defined in their related plugin spec)
+
+#### lua/utils
+
+Contains some utility code
+
+## Keymaps
+
+Thanks to which-key, you can list keymaps by typing `:WhichKey`.
