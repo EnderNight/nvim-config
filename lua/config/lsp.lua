@@ -10,9 +10,17 @@ lsp_zero.on_attach(function(client, bufnr)
     if client.server_capabilities["documentSymbolProvider"] then
         navic.attach(client, bufnr)
     end
+
+    -- require('lsp_signature').on_attach({
+    --     bind = true,
+    --     handle_opts = {
+    --         border = "rounded",
+    --     },
+    -- }, bufnr)
 end)
 
 require('lspconfig').clangd.setup({})
 require('lspconfig').lua_ls.setup({})
 require('lspconfig').cmake.setup({})
 require('lspconfig').marksman.setup({})
+require('lspconfig').bashls.setup({})
