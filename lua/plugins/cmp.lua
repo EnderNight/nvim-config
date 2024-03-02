@@ -14,8 +14,12 @@ return {
         'rafamadriz/friendly-snippets',
 
         -- VSCode like pictograms
-        'onsails/lspkind.nvim' ,
+        'onsails/lspkind.nvim',
 
-        'FelipeLema/cmp-async-path' ,
+        'hrsh7th/cmp-buffer',
+
+        'hrsh7th/cmp-path',
+
+        'hrsh7th/cmp-cmdline',
     },
 }
