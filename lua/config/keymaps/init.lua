@@ -12,3 +12,8 @@ require 'config.keymaps.telescope'
 
 --- Hop
 require 'config.keymaps.hop'
+
+
+
+--- NvimTree
+require 'config.keymaps.tree'

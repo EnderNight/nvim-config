@@ -5,7 +5,7 @@ return {
         'nvim-lua/plenary.nvim',
         'stevearc/dressing.nvim', -- optional for vim.ui.select
     },
-    setup = {
+    opts = {
         widget_guides = {
             enabled = true,
         },

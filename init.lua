@@ -32,3 +32,7 @@ require 'config.options'
 
 --- Keymaps
 require 'config.keymaps'
+
+
+--- Flutter
+require 'config.flutter'

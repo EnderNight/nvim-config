@@ -20,4 +20,11 @@ wk.register({
 
         ts = { builtin.treesitter, 'Show Treesitter', },
     },
+
 }, { prefix = '<leader>', })
+
+Utils.keymaps.map('n', '<leader>fc',
+    function()
+        require('telescope').extensions.flutter.commands()
+    end,
+    { desc = "Flutter commands", })
