@@ -12,10 +12,21 @@ lsp_zero.on_attach(function(client, bufnr)
     end
 end)
 
+--- C and C++
 require('lspconfig').clangd.setup({})
+--- Lua
 require('lspconfig').lua_ls.setup({})
+--- CMake
 require('lspconfig').cmake.setup({})
+--- Markdown
 require('lspconfig').marksman.setup({})
+--- Bash
 require('lspconfig').bashls.setup({})
+--- Python
 require('lspconfig').pylsp.setup({})
+--- Dart
 require('lspconfig').dartls.setup({})
+--- D
+require'lspconfig'.serve_d.setup({})
+--- OCaml
+require'lspconfig'.ocamllsp.setup({})

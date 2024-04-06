@@ -1,10 +1,11 @@
 --[[
-   ____  ___  ____ _   __(_)___ ___ 
+   ____  ___  ____ _   __(_)___ ___
   / __ \/ _ \/ __ \ | / / / __ `__ \
  / / / /  __/ /_/ / |/ / / / / / / /
-/_/ /_/\___/\____/|___/_/_/ /_/ /_/ 
+/_/ /_/\___/\____/|___/_/_/ /_/ /_/
 
-]]--
+]]
+   --
 
 
 --[[ Leader ]]
@@ -13,6 +14,11 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+--[[ netrw ]]
+-- :help netrw
+-- Disable netrw (repalce it with nvim-tree)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 --- Lazy
 require 'config.lazy'
@@ -36,3 +42,7 @@ require 'config.keymaps'
 
 --- Flutter
 require 'config.flutter'
+
+
+-- Nvim Tree
+require 'config.tree'
