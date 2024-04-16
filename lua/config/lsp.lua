@@ -27,6 +27,8 @@ require('lspconfig').pylsp.setup({})
 --- Dart
 require('lspconfig').dartls.setup({})
 --- D
-require'lspconfig'.serve_d.setup({})
+require('lspconfig').serve_d.setup({})
 --- OCaml
-require'lspconfig'.ocamllsp.setup({})
+require('lspconfig').ocamllsp.setup({})
+--- Rust
+require('lspconfig').rust_analyzer({})
