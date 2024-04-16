@@ -31,4 +31,4 @@ require('lspconfig').serve_d.setup({})
 --- OCaml
 require('lspconfig').ocamllsp.setup({})
 --- Rust
-require('lspconfig').rust_analyzer({})
+require('lspconfig').rust_analyzer.setup({})
