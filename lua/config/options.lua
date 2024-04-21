@@ -16,10 +16,10 @@ vim.o.undofile = true
 vim.o.tabstop = 4 -- Number of spaces per <Tab>
 vim.o.shiftwidth = 4 -- Number of spaces for each indent
 vim.o.expandtab = true -- Replace tabs with spaces
-vim.o.breakindent= true -- Preserve tabs for wrapped lines
+vim.o.breakindent = true -- Preserve tabs for wrapped lines
 
 --- Mouse mode
-vim.o.mouse = 'a'
+vim.o.mouse = "a"
 
 --- Terminal colors
 vim.o.termguicolors = true
@@ -28,7 +28,7 @@ vim.o.termguicolors = true
 vim.o.showmatch = true -- Jump to matching brace
 
 --- Signcolumn
-vim.o.signcolumn = 'yes' -- Always display the signcolumn
+vim.o.signcolumn = "yes" -- Always display the signcolumn
 
 --- Splitting
 vim.o.splitright = true -- Always split to the right
@@ -43,3 +43,5 @@ vim.o.scrolloff = 10
 
 --- Always listen for changes
 vim.o.autoread = true
+
+vim.o.rtp = "/home/matheo/.opam/default/share/ocp-indent/vim" .. vim.o.rtp
