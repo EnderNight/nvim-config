@@ -24,8 +24,8 @@ vim.g.loaded_netrwPlugin = 1
 require 'config.lazy'
 
 
---- LSP
-require 'config.lsp'
+--- LSP -> to use with Nix
+-- require 'config.lsp'
 
 
 -- cmp
