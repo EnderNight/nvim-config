@@ -5,14 +5,13 @@
 /_/ /_/\___/\____/|___/_/_/ /_/ /_/
 
 ]]
-   --
-
+--
 
 --[[ Leader ]]
 -- :help leader
 -- Set space as <leader>
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 --[[ netrw ]]
 -- :help netrw
@@ -21,28 +20,22 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 --- Lazy
-require 'config.lazy'
-
+require("config.lazy")
 
 --- LSP -> to use with Nix
 -- require 'config.lsp'
 
-
 -- cmp
-require 'config.cmp'
-
+require("config.cmp")
 
 --- Vim Options
-require 'config.options'
-
+require("config.options")
 
 --- Keymaps
-require 'config.keymaps'
-
+require("config.keymaps")
 
 --- Flutter
-require 'config.flutter'
-
+require("config.flutter")
 
 -- Nvim Tree
-require 'config.tree'
+require("config.tree")
