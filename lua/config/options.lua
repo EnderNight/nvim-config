@@ -43,5 +43,3 @@ vim.o.scrolloff = 10
 
 --- Always listen for changes
 vim.o.autoread = true
-
-vim.o.rtp = "/home/matheo/.opam/default/share/ocp-indent/vim" .. vim.o.rtp
