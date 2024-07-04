@@ -1,45 +1,65 @@
 --[[ Options ]]
--- :help vim.o
+-- :help vim.opt
+--
+--- Nerd Fonts
+vim.g.have_nerd_font = true
 
 --- Line number
-vim.o.number = true
-vim.o.relativenumber = true
+vim.opt.number = true
+vim.opt.relativenumber = true
 
 --- Search
-vim.o.ignorecase = true
-vim.o.smartcase = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 --- Undo
-vim.o.undofile = true
+vim.opt.undofile = true
 
 --- Tabs
-vim.o.tabstop = 4 -- Number of spaces per <Tab>
-vim.o.shiftwidth = 4 -- Number of spaces for each indent
-vim.o.expandtab = true -- Replace tabs with spaces
-vim.o.breakindent = true -- Preserve tabs for wrapped lines
+-- vim.opt.tabstop = 4 -- Number of spaces per <Tab>
+-- vim.opt.shiftwidth = 4 -- Number of spaces for each indent
+vim.opt.expandtab = true -- Replace tabs with spaces
+vim.opt.breakindent = true -- Preserve tabs for wrapped lines
 
 --- Mouse mode
-vim.o.mouse = "a"
+vim.opt.mouse = "a"
 
 --- Terminal colors
-vim.o.termguicolors = true
+vim.opt.termguicolors = true
 
 --- Showmatch
-vim.o.showmatch = true -- Jump to matching brace
+vim.opt.showmatch = true -- Jump to matching brace
 
 --- Signcolumn
-vim.o.signcolumn = "yes" -- Always display the signcolumn
+vim.opt.signcolumn = "yes" -- Always display the signcolumn
 
 --- Splitting
-vim.o.splitright = true -- Always split to the right
-vim.o.splitbelow = true -- Always split below
+vim.opt.splitright = true -- Always split to the right
+vim.opt.splitbelow = true -- Always split below
 
 --- Update time
-vim.o.updatetime = 250 -- Time before swap
-vim.o.timeoutlen = 300 -- Time before mapping
+vim.opt.updatetime = 250 -- Time before swap
+vim.opt.timeoutlen = 300 -- Time before mapping
 
 --- Scrolloff
-vim.o.scrolloff = 10
+vim.opt.scrolloff = 10
 
 --- Always listen for changes
-vim.o.autoread = true
+vim.opt.autoread = true
+
+
+--- Don't show mode
+vim.opt.showmode = false
+
+--- Clipboard
+vim.opt.clipboard = 'unnamedplus'
+
+--- Space display
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+-- Preview substitutions
+vim.opt.inccommand = 'split'
+
+--- Cursorline
+vim.opt.cursorline = true
