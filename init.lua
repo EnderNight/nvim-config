@@ -8,4 +8,4 @@
 -- Config by Ender (github.com/EnderNight)
 ]]
 
-require "settings"
+require "config.lazy"
