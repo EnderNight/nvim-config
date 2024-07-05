@@ -16,8 +16,10 @@ vim.opt.smartcase = true
 vim.opt.undofile = true
 
 --- Tabs
+--[[ With vim-sleuth
 -- vim.opt.tabstop = 4 -- Number of spaces per <Tab>
 -- vim.opt.shiftwidth = 4 -- Number of spaces for each indent
+]]
 vim.opt.expandtab = true -- Replace tabs with spaces
 vim.opt.breakindent = true -- Preserve tabs for wrapped lines
 
