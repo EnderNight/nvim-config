@@ -8,8 +8,8 @@
 -- Config by Ender (github.com/EnderNight)
 ]]
 
-require "config.lazy"
+require("config.lazy")
 
-require "config.mappings"
+require("config.mappings")
 
-require "config.commands"
+require("config.commands")
