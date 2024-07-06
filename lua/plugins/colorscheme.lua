@@ -7,7 +7,7 @@ return {
             local onedark = require("onedark")
 
             onedark.setup({
-                style = "deep",
+                style = "darker",
 
                 ending_tildes = true,
 
