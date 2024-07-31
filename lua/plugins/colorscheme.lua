@@ -25,4 +25,8 @@ return {
         dependencies = { "nvim-lua/plenary.nvim" },
         opts = { signs = false },
     },
+    {
+        "brenoprata10/nvim-highlight-colors",
+        config = true,
+    },
 }
