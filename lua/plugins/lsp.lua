@@ -13,9 +13,9 @@ return {
             config = function()
                 local lint = require("lint")
 
-                lint.linters_by_ft = {
-                    cpp = { "cpplint" },
-                }
+                -- lint.linters_by_ft = {
+                --     cpp = { "cpplint" },
+                -- }
 
                 local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
 
