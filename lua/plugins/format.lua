@@ -26,7 +26,7 @@ return {
             python = { "black" },
 
             -- Run until either "prettierd" or "prettier" is found
-            javascript = { { "prettierd", "prettier" } },
+            javascript = { "prettierd", "prettier", stop_after_first = true },
         },
     },
 }
