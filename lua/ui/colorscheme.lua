@@ -1,14 +1,19 @@
 return {
-  'folke/tokyonight.nvim',
+  'navarasu/onedark.nvim',
   priority = 1000,
   config = function()
-    ---@diagnostic disable-next-line: missing-fields
-    require('tokyonight').setup {
-      styles = {
-        comments = { italic = false },
+    local onedark = require 'onedark'
+
+    onedark.setup {
+      style = 'darker',
+      ending_tildes = true,
+      code_style = {
+        comments = 'italic',
+        keywords = 'bold',
+        functions = 'bold',
       },
     }
 
-    vim.cmd.colorscheme 'tokyonight-night'
+    onedark.load()
   end,
 }
