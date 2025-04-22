@@ -3,5 +3,5 @@
 
   outputs = { self, ... }: {
     configDir = ./.;
-  }
+  };
 }
