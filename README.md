@@ -2,9 +2,19 @@
 
 Personal neovim configuration.
 
+## Must know
+
+This configuration is going to be my main one very soon.
+
+## Required packages
+
+- ripgrep
+- wl-clipboard
+
 ## TODO
 
-- [ ] better git support
-- [ ] fix mappings
-- [ ] add undo and neo tree
-- [ ] support for debugging
+- Add required packages list to README
+- Add plugin list to README
+- Add lazy plugin manager
+- Add colorscheme
+- Add beter buffer tabs
