@@ -11,4 +11,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = '\\'
 
-require 'options'
+require 'config.options'
+
+require 'config.lazy'

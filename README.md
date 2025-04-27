@@ -11,10 +11,11 @@ This configuration is going to be my main one very soon.
 - ripgrep
 - wl-clipboard
 
+## Plugins
+
+- [lazy.nvim](https://github.com/folke/lazy.nvim)
+- [onedarkpro.nvim](https://github.com/olimorris/onedarkpro.nvim)
+
 ## TODO
 
-- Add required packages list to README
-- Add plugin list to README
-- Add lazy plugin manager
-- Add colorscheme
 - Add beter buffer tabs
