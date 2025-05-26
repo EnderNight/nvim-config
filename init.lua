@@ -1,4 +1,3 @@
---[[                       _
 ---                       (_)
 ---  _ __   ___  _____   ___ _ __ ___
 --- | '_ \ / _ \/ _ \ \ / / | '_ ` _ \
@@ -10,6 +9,13 @@
 ---[[ Global variables ]]---
 vim.g.mapleader = ' '
 vim.g.maplocalleader = '\\'
+
+vim.g.loaded_node_provider = 0
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
+
+
 
 ---[[ Options ]]---
 vim.opt.number = true
@@ -49,6 +55,8 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 
 vim.o.termguicolors = true
+
+
 
 ---[[ Commands ]]---
 vim.api.nvim_create_autocmd('TextYankPost', {
