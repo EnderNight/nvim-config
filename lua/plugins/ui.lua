@@ -4,7 +4,10 @@ return {
     {
         'akinsho/bufferline.nvim',
         version = "*",
-        dependencies = 'nvim-tree/nvim-web-devicons',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons',
+        },
+
         config = function(_, opts)
             require("bufferline").setup(opts)
 
@@ -13,5 +16,14 @@ return {
             map("n", "<leader>bp", "<cmd>BufferLinePick<cr>", { desc = "Pick a Buffer", })
             map("n", "<leader>bc", "<cmd>BufferLinePickClose<cr>", { desc = "Pick a Buffer to Close", })
         end,
+    },
+
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons',
+        },
+
+        config = true,
     },
 }

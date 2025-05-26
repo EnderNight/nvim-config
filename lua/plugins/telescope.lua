@@ -7,6 +7,8 @@ return {
         'nvim-lua/plenary.nvim',
     },
 
+    event = "VimEnter",
+
     config = function(_, opts)
         require("telescope").setup(opts)
 
