@@ -4,6 +4,7 @@ Personal neovim configuration.
 
 ## Plugins
 
+- [blink.nvim](https://github.com/Saghen/blink.cmp)
 - [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
 - [guess-indent.nvim](https://github.com/NMAC427/guess-indent.nvim)
 - [leap.nvim](https://github.com/ggandor/leap.nvim)
@@ -23,3 +24,5 @@ Personal neovim configuration.
 - undo and neo tree
 - debugging
 - terminal
+- todo-comments
+- mini.nvim
