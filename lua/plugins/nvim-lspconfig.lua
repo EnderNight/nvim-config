@@ -1,28 +1,29 @@
 return {
-    'neovim/nvim-lspconfig',
-    dependencies = { 'saghen/blink.cmp', },
+  'neovim/nvim-lspconfig',
+  dependencies = { 'saghen/blink.cmp' },
 
-    opts = {
-        servers = {
-            lua_ls = {},
-            ocamllsp = {},
-        },
+  opts = {
+    servers = {
+      lua_ls = {},
+      ocamllsp = {},
     },
-    config = function(_, opts)
-        local lspconfig = require('lspconfig')
+  },
+  config = function(_, opts)
+    local lspconfig = require 'lspconfig'
 
-        for server, config in pairs(opts.servers) do
-            config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
-            lspconfig[server].setup(config)
-        end
+    for server, config in pairs(opts.servers) do
+      config.capabilities =
+        require('blink.cmp').get_lsp_capabilities(config.capabilities)
+      lspconfig[server].setup(config)
+    end
 
-        vim.diagnostic.config({
-            severity_sort = true,
-            float = { border = true, },
-            underline = { severity = vim.diagnostic.severity.ERROR, },
-            virtual_text = {
-                spacing = 4,
-            },
-        })
-    end,
+    vim.diagnostic.config {
+      severity_sort = true,
+      float = { border = true },
+      underline = { severity = vim.diagnostic.severity.ERROR },
+      virtual_text = {
+        spacing = 4,
+      },
+    }
+  end,
 }
