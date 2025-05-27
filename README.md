@@ -9,7 +9,6 @@ Personal neovim configuration.
 - [guess-indent.nvim](https://github.com/NMAC427/guess-indent.nvim)
 - [leap.nvim](https://github.com/ggandor/leap.nvim)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [noice.nvim](https://github.com/folke/noice.nvim)
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)

@@ -3,11 +3,6 @@ return {
   -- optional: provides snippets for the snippet source
   dependencies = {
     'rafamadriz/friendly-snippets',
-    {
-      'L3MON4D3/LuaSnip',
-      version = 'v2.*',
-      build = 'make install_jsregexp',
-    },
   },
 
   -- use a release tag to download pre-built binaries
@@ -39,7 +34,7 @@ return {
     },
 
     snippets = {
-      preset = 'luasnip',
+      preset = 'default',
     },
 
     fuzzy = { implementation = 'prefer_rust_with_warning' },

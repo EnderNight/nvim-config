@@ -6,6 +6,7 @@ return {
     servers = {
       lua_ls = {},
       ocamllsp = {},
+      clangd = {},
     },
   },
   config = function(_, opts)
