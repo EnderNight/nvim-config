@@ -14,11 +14,10 @@ Personal neovim configuration.
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [onedark.nvim](https://github.com/navarasu/onedark.nvim)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- ...
 
 ## TODO
 
-- autocomplete
-- autoformat
 - whichkey
 - lsp
 - git (git signs, git support)
